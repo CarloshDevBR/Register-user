@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Bg from '../../assets/bg-img01.svg'
+import Bg from '../../assets/bg-img02.png'
 
 export const Container = styled.div `
   width: 100%;
@@ -12,17 +12,9 @@ export const Container = styled.div `
   flex-direction: column;
 `
 
-export const BoxImg = styled.div `
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 170px;
-`
-
 export const People = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 `
 
 export const BoxOrigin = styled.div`
@@ -33,6 +25,7 @@ export const BoxOrigin = styled.div`
   width: 300px;
   height: 100%;
   border-radius: 61px 61px 0px 0px;
+  backdrop-filter: blur(15px);
   background: 
     linear-gradient(157.44deg, 
     rgba(255, 255, 255, 0.6) 0.84%, 
@@ -65,27 +58,6 @@ export const BoxOne = styled.div `
   flex-direction: column;
 `
 
-export const InputItem = styled.input `
-  width: 90%;
-  height: 45px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  margin: 0 0 25px 0;
-  padding-left: 20px;
-  font-size: 13pt;
-  line-height: 28px;
-  color: white;
-`
-
-export const P = styled.p `
-  padding: 0 150px 0 0;
-  color: white;
-  line-height: 22px;
-  font-size: 10pt;
-`
-
 export const Btn = styled.button `
   display: flex;
   justify-content: center;
@@ -93,15 +65,15 @@ export const Btn = styled.button `
   gap: 20px;
   width: 85%;
   height: 50px;
-  margin: 60px 0 10px 0;
-  background: rgba(0, 0, 0, 0.8);
+  margin: 110px 0 10px 0;
+  background: transparent;
   border-radius: 14px;
+  border: 1px solid white;
   color: white;
-  font-size: 11pt;
+  font-size: 13pt;
   line-height: 28px;
   cursor: pointer;
   transition: ease-in-out .1s ;
-  border: none;
   
   :hover{
    opacity: .5;
@@ -110,15 +82,17 @@ export const Btn = styled.button `
   active{
    opacity: .8;
   }
-`
-
-export const Seta = styled.img `
-  width: 18px;
-  height: 18px;
+  
+  img{
+    width: 18px;
+    height: 18px;
+    transform: rotate(180deg);
+  }
 `
 
 export const Ul = styled.ul `
   width: 100%;
+  height: 210px;
   display: flex;
   justify-content: center;
   align-items: center;

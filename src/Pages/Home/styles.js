@@ -11,14 +11,6 @@ export const Container = styled.div `
   flex-direction: column;
 `
 
-export const BoxImg = styled.div `
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 190px;
-`
-
 export const People = styled.img`
   width: 230px;
   height: 230px;
@@ -78,7 +70,7 @@ export const InputItem = styled.input `
 `
 
 export const P = styled.p `
-  padding: 0 150px 0 0;
+  padding: 0 180px 0 0;
   color: white;
   line-height: 22px;
   font-size: 10pt;
@@ -89,14 +81,14 @@ export const Btn = styled.button `
   justify-content: center;
   align-items: center;
   align-self: center;
-  gap: 20px;
+  gap: 25px;
   width: 85%;
   height: 50px;
   margin: 110px 0 10px 0;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 14px;
   color: white;
-  font-size: 11pt;
+  font-size: 12pt;
   line-height: 28px;
   cursor: pointer;
   transition: ease-in-out .1s ;

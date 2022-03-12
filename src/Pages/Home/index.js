@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Container, BoxImg, People, BoxOrigin, Title, H1 } from './styles.js'
+import { Container, People, BoxOrigin, Title, H1 } from './styles.js'
 
 import { Button } from '../../components/Button/'
 import { Input } from '../../components/Input/'
@@ -20,9 +20,7 @@ function Home() {
   
   return (
      <Container>
-      <BoxImg>
-        <People src={PeopleImg} alt='people' />
-      </BoxImg>
+      <People src={PeopleImg} alt='people' />
       
       <BoxOrigin>
         <Title>

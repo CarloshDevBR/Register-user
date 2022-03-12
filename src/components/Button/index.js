@@ -4,7 +4,7 @@
  export const Button = ({ onClick }) => {
    return (
     <Btn onClick={ onClick }>
-          Cadastrar
+          Register
       <Seta src={SetaImg} alt='seta'/>
     </Btn>
   )
