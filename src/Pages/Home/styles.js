@@ -101,9 +101,9 @@ export const Btn = styled.button `
   active{
    opacity: .8;
   }
-`
-
-export const Seta = styled.img `
-  width: 18px;
+  
+  img{
+    width: 18px;
   height: 18px;
+  }
 `

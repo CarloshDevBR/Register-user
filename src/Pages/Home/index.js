@@ -30,7 +30,6 @@ function Home() {
         <Input Name={inputName} Age={inputAge} />
   
         <Button onClick={addNewUser} />
-  
       </BoxOrigin>
     </Container>
   )

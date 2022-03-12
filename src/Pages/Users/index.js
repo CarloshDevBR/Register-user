@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container, People, BoxOrigin, Title, H1 } from './styles.js'
 
 import { List } from '../../components/List'
@@ -10,8 +10,6 @@ import axios from 'axios'
 
 function Users() {
   const [user, setUser] = useState([])
-  const inputName = useRef()
-  const inputAge = useRef()
 
   useEffect(() => {
     async function fetchUsers(){
