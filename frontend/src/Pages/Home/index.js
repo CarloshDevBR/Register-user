@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { useHistory } from "react-router-dom"
 import { Container, People, BoxOrigin, Title, H1 } from './styles.js'
 
 import { Button } from '../../components/Button/'
@@ -10,19 +11,22 @@ import axios from 'axios'
 
 function Home() {
   const [user, setUser] = useState([])
+  const history = useHistory()
   const inputName = useRef()
   const inputAge = useRef()
   
   async function addNewUser() {
     const { data: newUser } = await axios.post("http://localhost:3001/users", { name: inputName.current.value, age: inputAge.current.value })
     setUser([...user, newUser])
+    
+    history.push("/Users")
   }
   
   return (
      <Container>
-      <People src={PeopleImg} alt='people' />
-      
       <BoxOrigin>
+        <People src={PeopleImg} alt='people' />
+      
         <Title>
             <H1>Hello!</H1>
         </Title>

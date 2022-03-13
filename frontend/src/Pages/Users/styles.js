@@ -3,7 +3,8 @@ import Bg from '../../assets/bg-img02.png'
 
 export const Container = styled.div `
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-image: url("${Bg}");
   background-size: cover;
   display: flex;
@@ -23,7 +24,7 @@ export const BoxOrigin = styled.div`
   align-items: center;
   flex-direction: column;
   width: 300px;
-  height: 100%;
+  height: 100vh;
   border-radius: 61px 61px 0px 0px;
   backdrop-filter: blur(15px);
   background: 
@@ -58,14 +59,14 @@ export const BoxOne = styled.div `
   flex-direction: column;
 `
 
-export const Btn = styled.button `
+export const Btn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   width: 85%;
   height: 50px;
-  margin: 110px 0 10px 0;
+  margin: 70px 0 10px 0;
   background: transparent;
   border-radius: 14px;
   border: 1px solid white;
@@ -92,7 +93,8 @@ export const Btn = styled.button `
 
 export const Ul = styled.ul `
   width: 100%;
-  height: 210px;
+  height: 450px;
+  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +107,7 @@ export const Li = styled.li `
   align-items: center;
   justify-content: space-around;
   width: 60%;
-  height: 45px;
+  min-height: 45px;
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

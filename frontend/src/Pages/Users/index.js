@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import { Container, People, BoxOrigin, Title, H1 } from './styles.js'
 
 import { List } from '../../components/List'
@@ -10,7 +11,8 @@ import axios from 'axios'
 
 function Users() {
   const [user, setUser] = useState([])
-
+  const history = useHistory()
+  
   useEffect(() => {
     async function fetchUsers(){
       const { data } = await axios.get("http://localhost:3001/users")
@@ -29,6 +31,10 @@ function Users() {
     await axios.delete(`http://localhost:3001/users/${id}`)
   }
   
+  function goBack() {
+    history.push("/")
+  }
+  
   return (
      <Container>
       <People src={Avatar} alt='people' />
@@ -40,7 +46,7 @@ function Users() {
         
         <List users={user} onClick={removeItem} />
         
-        <BackButton />
+          <BackButton onClick={goBack} />
         
       </BoxOrigin>
     </Container>
