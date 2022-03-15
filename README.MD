@@ -15,7 +15,7 @@ react-router-dom(v5) was used. For styling, the styled component library was use
 <p align="center">On the first screen we have a function where we will add the users inside the useState() with the onClick event, and we will store the data in the node express server with the post method of the axios library.</p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/92805039/158461838-65dc647a-82e3-4e3d-a0b2-08ba734660af.png" />
+<img src="https://user-images.githubusercontent.com/92805039/158461838-65dc647a-82e3-4e3d-a0b2-08ba734660af.png" width="355px" />
 </p>
   
 <br>
@@ -24,7 +24,7 @@ react-router-dom(v5) was used. For styling, the styled component library was use
 <p align="center">After pressing the button on the previous screen, the user is launched on the screen where he can see the added users and, if desired, he can also remove them. For the added users I made a get request to the node express server, thus showing the users already added. To remove users, the filter method was used, where by id I can remove it. Pressing the back button returns the user to the previous page as the react-router-dom useHistory hook was used on the button to make the user return.</p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/92805039/158465878-dbaf1c89-65b7-4493-80bb-4005d32385e5.png" />
+<img src="https://user-images.githubusercontent.com/92805039/158465878-dbaf1c89-65b7-4493-80bb-4005d32385e5.png" width="355px" />
 </p>
   
 <br>
