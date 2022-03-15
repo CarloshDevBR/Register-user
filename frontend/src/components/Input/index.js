@@ -1,4 +1,4 @@
-import { BoxOne, P, InputItem } from '../../Pages/Home/styles.js'
+import { BoxOne, P, InputItem } from '../../components/Input/styles.js'
 
 export const Input = ({ Name, Age }) => {
   return(

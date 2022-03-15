@@ -1,5 +1,5 @@
 import React from 'react'
-import { Ul, Li, Trash } from '../../Pages/Users/styles.js'
+import { Ul, Li, Trash } from './styles.js'
 import TrashImg from '../../assets/trash.png'
 
 export const List = ({ users, onClick }) => {

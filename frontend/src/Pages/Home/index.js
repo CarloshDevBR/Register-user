@@ -1,9 +1,11 @@
 import React, { useState, useRef } from 'react'
 import { useHistory } from "react-router-dom"
-import { Container, People, BoxOrigin, Title, H1 } from './styles.js'
+import { Container, People } from './styles.js'
 
 import { Button } from '../../components/Button/'
 import { Input } from '../../components/Input/'
+import { Title } from '../../components/Title/'
+import { Box } from '../../components/Container'
 
 import PeopleImg from '../../assets/people.svg'
 
@@ -24,17 +26,15 @@ function Home() {
   
   return (
      <Container>
-      <BoxOrigin>
+      <Box>
         <People src={PeopleImg} alt='people' />
       
-        <Title>
-            <H1>Hello!</H1>
-        </Title>
+        <Title>Hello!</Title>
   
         <Input Name={inputName} Age={inputAge} />
   
-        <Button onClick={addNewUser} />
-      </BoxOrigin>
+        <Button onClick={addNewUser}>Register</Button>
+      </Box>
     </Container>
   )
 }

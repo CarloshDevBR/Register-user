@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Container, People, BoxOrigin, Title, H1 } from './styles.js'
+import { Container, People, BoxOrigin } from './styles.js'
 
-import { List } from '../../components/List'
-import { BackButton } from '../../components/BackButton/'
+import { List } from '../../components/List/'
+import { Button } from '../../components/Button/'
+import { Title } from '../../components/Title/'
+import { Box } from '../../components/Container/'
 
 import Avatar from '../../assets/avatar.svg'
 
@@ -39,16 +41,13 @@ function Users() {
      <Container>
       <People src={Avatar} alt='people' />
       
-      <BoxOrigin>
-        <Title>
-            <H1>Users</H1>
-        </Title>
+      <Box isBlur={true}>
+        <Title>Users</Title>
         
         <List users={user} onClick={removeItem} />
         
-          <BackButton onClick={goBack} />
-        
-      </BoxOrigin>
+        <Button onClick={goBack} back={true}>Back</Button>
+      </Box>
     </Container>
   )
 }
