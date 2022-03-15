@@ -13,6 +13,6 @@ export const Container = styled.div `
 `
 
 export const People = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 220px;
 `
