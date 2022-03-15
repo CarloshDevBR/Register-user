@@ -28,14 +28,6 @@ react-router-dom(v5) was used. For styling, the styled component library was use
 </p>
   
 <br>
-
-
-
-
-
-
-
-
 <br>
 
 <h1 align="center">👀 Project demo</h1>
