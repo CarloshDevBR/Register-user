@@ -1,4 +1,4 @@
-## Linguage: PT-BR
+### Linguage: PT-BR
 
 <h1 align="center">User registration</h1>
 
@@ -8,31 +8,57 @@ react-router-dom(v5) was used. For styling, the styled component library was use
 
 <br>
 
-## 🕵️ How does the project work?
+<h1 align="center">🕵️ How does the project work?</h1>
+
+<br>
 
 <p align="center">On the first screen we have a function where we will add the users inside the useState() with the onClick event, and we will store the data in the node express server with the post method of the axios library.</p>
 
-![Screenshot_20220315-165522~2](https://user-images.githubusercontent.com/92805039/158461838-65dc647a-82e3-4e3d-a0b2-08ba734660af.png)
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/92805039/158461838-65dc647a-82e3-4e3d-a0b2-08ba734660af.png" />
+</p>
+  
+<br>
 <br>
 
 <p align="center">After pressing the button on the previous screen, the user is launched on the screen where he can see the added users and, if desired, he can also remove them. For the added users I made a get request to the node express server, thus showing the users already added. To remove users, the filter method was used, where by id I can remove it. Pressing the back button returns the user to the previous page as the react-router-dom useHistory hook was used on the button to make the user return.</p>
 
-![Screenshot_20220315-165540~2](https://user-images.githubusercontent.com/92805039/158465878-dbaf1c89-65b7-4493-80bb-4005d32385e5.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/92805039/158465878-dbaf1c89-65b7-4493-80bb-4005d32385e5.png" />
+</p>
+  
+<br>
 
+
+
+
+
+
+
+
+<br>
+
+<h1 align="center">👀 Project demo</h1>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/92805039/158460995-d953b9ac-347e-4aa6-9c6e-a1586564469c.gif" />
+</p>
+
+<br>
 <br>
 
 ### 🚀🚀Features
+
 - [x] hooks
+
 - [x] reuse of components
+
 - [x] routes
+
 - [x] style with props
+
 - [x] connection to server
 
-### 👀 Project demo
-![20220315_165029](https://user-images.githubusercontent.com/92805039/158460995-d953b9ac-347e-4aa6-9c6e-a1586564469c.gif)
-
-<br>
 <br>
 
 ### 🎲running the front end
@@ -58,6 +84,8 @@ $ cd Register-user/backend
 $ node script.js
 #the server will initialize in the <http://localhost:3001>
 ```
+
+<br>
 
 ### 🛠️ technologies used
 
